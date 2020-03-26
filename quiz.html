@@ -1,0 +1,296 @@
+<html>
+   <head>
+      <title>Quiz</title>
+         <link href="css/quizStyleSheet.css" rel="stylesheet" type="text/css">
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		 <style>
+		  #section{
+      padding-left:30px; 
+      background-image:url("images/use-movie-concept-1.jpg"); 
+      height: 250%; 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin:auto;
+         
+	 }
+		 </style>
+    
+       </head>
+
+    <body>
+
+<!--navigation bar -->
+        <div class="headerH1">
+               <img id="logoH1" src="images/logopng.png" alt="logo" >  
+               <div id="navigationbar"> 
+                   <ul>	   
+						<li> <a  href="team.html">Team</a></li>
+						<li> <a href="gallery.html">Gallery</a></li>
+					    <li> <a href="siteMap.html">SiteMap</a></li>
+					    <li> <a href="quiz.html">Quiz</a></li>
+					    <li> <a href="products.html">Product</a></li>
+						<li><a href="home.html">Home</a></li>
+				   </ul>
+				</div>
+         </div>
+
+			
+<div id="section">
+<div class="section2">
+<div class = "develop"><h1 id="h1H1">Quiz</h1></div>
+
+<form name="try">
+<br><br>
+<!--timer-->
+
+<div class="remainingTime">Remaining Time:-<span id="time" class="timer"</span></div>
+
+<div id="Que">
+
+
+
+
+<!--question paper-->
+<p>1.Who is responsible for set location and costume design?<br/> 
+<input type="radio" name="que01" value="Production desighner"/>Production desighner<br/>
+<input type="radio" name="que01" value="Screen writer"/>Screen writer<br/>
+<input type="radio" name="que01" value="Costume desighner"/>Costume desighner<br/>
+<input type="radio" name="que01" value="Editor"/>Editor<br/><br/>
+</p>
+
+<p>02.What is the responsibility of a boom operator?<br/><br/>
+<input type="radio" name="que02" value="Camera crane operation"/>Camera crane operation<br/>
+<input type="radio" name="que02" value="set teardown"/>set teardown</br>
+<input type="radio" name="que02" value="microphone placement"/>microphone placement</br>
+<input type="radio" name="que02" value="pyrotechnic special effects"/>pyrotechnic special effects<br/><br/>
+</p>
+
+<p>03.who is responsible of setting up the set lights before filming?<br/>
+<input type="radio" name="que03" value="Editor"/>Editor</br>
+<input type="radio" name="que03" value="Gaffer"/>Gaffer</br>
+<input type="radio" name="que03" value="Production desighner"/>Production desighner</br>
+<input type="radio" name="que03" value="Screen writer"/>Screen writer<br/><br/>
+</p>
+
+<p>04.What is the name that is used for the last shot of the day?<br/>
+<input type="radio" name="que04" value="Homer"/>Homer<br/>
+<input type="radio" name="que04" value="Abby singer"/>Abby singer<br/>
+<input type="radio" name="que04" value="Champagne shot"/>Champagne shot<br/>
+<input type="radio" name="que04" value="Martini shot"/>Martini shot<br/><br/>
+</p>
+
+<p>05.What is the name used for the head of the electrical department on a film set?<br/><br/>
+
+<input type="radio" name="que05" value="Gaffer"/>Gaffer</br>
+<input type="radio" name="que05" value="Best Boy"/>Best Boy</br>
+<input type="radio" name="que05" value="Chief Wire"/>Chief Wire</br>
+<input type="radio" name="que05" value="Hot Shot"/>Hot Shot<br/><br/>
+</p>
+
+<p>06. which one of the lights  is not used in the three-point lighting?<br/>
+<input type="radio" name="que06" value="Fe"/>Back</br>
+<input type="radio" name="que06" value="Ca"/>Fill</br>
+<input type="radio" name="que06" value="Zn"/>Key</br>
+<input type="radio" name="que06" value="Al"/>Sub<br/><br/>
+</p>
+
+<p>07.what is the first film that used the steadycam technology? <br/>
+<input type="radio" name="que07" value="W"/>Jaws</br>
+<input type="radio" name="que07" value="The Abyss"/>The Abyss</br>
+<input type="radio" name="que07" value="The Insider"/>The Insider</br>
+<input type="radio" name="que07" value="Rocky"/>Rocky<br/><br/>
+</p>
+
+<p>08.What is the the date that first film was screened.?<br/><br/>
+
+ <input type="radio" name="que08" value="January 5th, 1888"/>January 5th, 1888</br>
+ <input type="radio" name="que08" value="May 1st, 1897"/>May 1st, 1897</br>
+ <input type="radio" name="que08" value="December 28th, 1895"/>December 28th, 1895</br>
+ <input type="radio" name="que08" value="September 20th, 1897"/>September 20th, 1897<br/><br/>
+ </p>
+ 
+<p>09.Which of these directors has won the most Oscars for directing?<br/>
+ <input type="radio" name="que09" value="Alan J. Pakula"/>Alan J. Pakula</br>
+ <input type="radio" name="que09" value="John Ford"/>John Ford</br>
+ <input type="radio" name="que09" value="Stanley Kubrick"/>Stanley Kubrick</br>
+ <input type="radio" name="que09" value="Jack Nicholson"/>Jack Nicholson<br/><br/>
+ </p>
+ 
+<p>10. Who handles the lighting and camera crews on set during filming? <br/>
+<input type="radio" name="que10" value="Cinematographer"/>Cinematographer</br>
+<input type="radio" name="que10" value="Art director"/>Art director</br>
+<input type="radio" name="que10" value="Costume desighner"/>Costume desighner</br>
+<input type="radio" name="que10" value="Screen writer"/>Screen writer<br/><br/>
+</p>
+</div>
+
+<br/>
+	<input type="submit" value="submit " onclick="quiz()">
+	<input type="reset" value="restet">
+
+</form>
+</div>
+</div>
+<div class="developer">
+       
+
+
+        
+        </div>
+<script>
+	
+	 var Seconds = 600;
+					function timeOver(){
+					var Minutes = Math.round((Seconds - 30) / 60);
+					var remSeconds = Seconds % 60;
+					
+					if(remSeconds < 10){
+						remSeconds = "0" + remSeconds;
+					}
+					document.getElementById('time').innerHTML = Minutes + ":" + remSeconds;
+					
+					if(Seconds == 0){
+						clearInterval(clearTimer);
+						document.getElementById('time').innerHTML = "time over";
+					}else{
+						Seconds --;
+					}
+				}
+				var clearTimer = setInterval('timeOver()',1000);
+
+	
+	
+		function quiz(){	
+			var marks=0;
+			var Ans1 = document.try.que01.value;
+			var Ans2 = document.try.que02.value;
+			var Ans3 = document.try.que03.value;
+			var Ans4 = document.try.que04.value;
+			var Ans5 = document.try.que05.value;
+			var Ans6 = document.try.que06.value;
+			var Ans7 = document.try.que07.value;
+			var Ans8 = document.try.que08.value;
+			var Ans9 = document.try.que09.value;
+			var Ans10 = document.try.que10.value;
+			
+			document.write("<h1><center>Summary Of the Questions</h1></center>")
+			
+			
+			//making the user answers
+			if (Ans1=="Production desighner"){
+				document.write("<h3>\&#x2705 Your answer is correct! </h3>"+"<br>");
+				marks=marks+2;
+				console.log(Ans1);
+			}else{
+				document.write("<h3>\&#x274C Your answer is incorrect, correct answer is Production desighner</h3>"+"<br>");
+				marks=marks-1;
+			}
+			
+			if (Ans2=="microphone placement"){
+				document.write("<h3>\&#x2705 Your answer is correct!</h3>"+"<br>");
+				marks=marks+2;
+				console.log(Ans2);
+			}else{
+				document.write("<h3>\&#x274C Your answer is incorrect, correct answer is  microphone placement</h3>"+"<br>");
+				marks=marks-1;
+			}
+			
+			if (Ans3=="Gaffer"){
+				document.write("<h3>\&#x2705 Your answer is correct!</h3>"+"<br>");
+				marks=marks+2;
+				console.log(Ans3);
+			}else{
+				document.write("<h3>\&#x274C Your answer is incorrect, correct answer is Gaffer</h3>"+"<br>");
+				marks=marks-1;
+			}
+			
+			if (Ans4=="Martini shot"){
+				document.write("<h3>\&#x2705 Your answer is correct!</h3>"+"<br>");
+				marks=marks+2;
+				console.log(Ans4);
+			}else{
+				document.write("<h3>\&#x274C Your answer is incorrect, correct answer is Martini shot</h3>"+"<br>");
+				marks=marks-1;
+			}
+			
+			if (Ans5=="Gaffer"){
+				document.write("<h3>\&#x2705 Your answer is correct!</h3>"+"<br>");
+				marks=marks+2;
+				console.log(Ans5);
+			}else{
+				document.write("<h3>\&#x274C Your answer is incorrect, correct answer is Gallus Gaffer</h3>"+"<br>");
+				marks=marks-1;
+			} 
+			
+			if (Ans6=="Sub"){
+				document.write("<h3>\&#x2705 Your answer is correct!</h3>"+"<br>");
+				marks=marks+2;
+				console.log(Ans6);
+			}else{
+				document.write("<h3>\&#x274C Your answer is incorrect, correct answer is Sub</h3>"+"<br>");
+				marks=marks-1;
+			} 
+			
+			if (Ans7=="Rocky"){
+				document.write("<h3>\&#x2705 Your answer is correct!</h3>"+"<br>");
+				marks=marks+2;
+				console.log(Ans7);
+			}else{
+				document.write("<h3>\&#x274C Your answer is incorrect, correct answer is Rocky</h3>"+"<br>");
+				marks=marks-1;
+			} 
+			
+			if (Ans8=="December 28th, 1895"){
+				document.write("<h3>\&#x2705 Your answer is correct!</h3>"+"<br>");
+				marks=marks+2;
+				console.log(Ans8);
+			}else{
+				document.write("<h3>\&#x274C Your answer is incorrect, correct answer is December 28th, 1895</h3>"+"<br>");
+				marks=marks-1;
+			} 
+			
+			if (Ans9=="John Ford"){
+				document.write("<h3>\&#x2705 Your answer is correct!</h3>"+"<br>");
+				marks=marks+2;
+				console.log(Ans9);
+			}else{
+				document.write("<h3>\&#x274C Your answer is incorrect, correct answer is John Ford</h3>"+"<br>");
+				marks=marks-1;
+			}
+			
+			if (Ans10=="Cinematographer"){
+				document.write("<h3>\&#x2705 Your answer is correct!</h3>"+"<br>");
+				marks=marks+2;
+				console.log(Ans10);
+			}else{
+				document.write("<h3>\&#x274C Your answer is incorrect, correct answer is Cinematographer</h3>"+"<br>");
+				marks=marks-1;
+			}
+			
+			document.write("<h2>Your score is: </h2>"+marks+"<br>");
+			
+				if	(marks==20)
+					{
+						document.body.style.backgroundColor="#ff704d";
+					}
+				
+				
+				else	
+					{
+						document.body.style.backgroundColor="#F96981";
+					}	
+		
+		}
+				  
+	
+       </script>
+	   <footer >
+                 <a id="student3anchor" href="stagesOfProduction.html">stages of film production page created by student 3</a><br>
+				   <a id="student3anchor" href="student3cv.html">cv page created by student 3</a><br>
+				   <a id="student3anchor" href="team.html">student details page created by student 3</a>
+                 <p>Student3-Nethmi Sachindi Weedagama</p>
+              </footer>
+        </div>	  
+     </body>
+</html>

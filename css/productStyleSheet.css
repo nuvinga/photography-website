@@ -1,0 +1,191 @@
+.headerH1{
+	 background:black;
+	 }
+ #logoH1{
+       width:200px;
+       height:100px;
+      }
+ #navigationbar{
+		 float:right;
+		 text-align: center;
+		 padding: 25px;
+		 text-decoration: none;
+		 font-size: 20px;
+		 border-right: 2px solid black;
+}
+
+ li{
+  float:right;
+  }
+
+ li a:hover{
+	 background-color:orange;
+	 }
+ li a{
+	 display:block;
+	 color:white;
+         padding:14px 16px;
+	 text-decoration:none;
+	 text-align:center;
+	 }
+footer{
+	
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: orange;
+    text-align: center;
+}
+		 
+#scontainer{
+	width: 1200px;
+	height:100%;
+			margin: auto;
+}
+
+#scontainer{
+	width: 900px;
+	height:100%;
+	margin: auto;
+  	
+}
+
+#product{
+	width: 145px;
+	height:145px;
+}
+
+#sheader{
+	background-color:Orange;
+	border-bottom: 2px black;
+	text-align:center;	
+	
+}
+
+#sleft{
+	background-color:white;
+	float:left;
+	padding:15px;
+	padding-top:21px;
+	padding-bottom:20px;
+	width:150px;
+	border-bottom: 1px solid orange;
+}
+
+#smiddle{
+	background-color:rgba(255,255,255,0.5);
+	float:left;
+	padding-left:20px;
+	width:600px;
+	min-height:190px;
+	border-bottom: 1px solid orange;
+}
+
+#sright{
+	background-color:orange;
+	width:65px;
+	padding: 35px 5px 5px 30px;
+	float:left;
+	min-height:150px;
+	border-bottom: 1px solid orange;
+	
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 5px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=textarea], select {
+  width: 100%;
+  padding: 5px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+
+ #ssubmit{
+  width: 100%;
+  background-color:grey;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+ #ssubmit:hover {
+  background-color:green;
+}
+#sreset {
+  width: 100%;
+  background-color:grey;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#sreset:hover {
+  background-color:red;
+}
+
+.ssubmit{
+  width:auto;
+  background-color:grey;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#sfooter{
+	font-size:20px;
+}
+#items_table{
+	color:white;
+}
+#add1,#add2,#add3,#add4{
+	font-family: 'Oswald', sans-serif;	
+	font-size:18px;
+	
+}
+#price{
+	font-family:'Oswald', sans-serif;
+	font-size:15px;
+	text-align:center;
+}
+#decreaseFont,#increaseFont{
+	background-color:grey;
+  border: none;
+  color: white;
+  
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+#sbuttons{
+	background-color:grey;
+  border: none;
+  color: white;
+  
+  text-align: center;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+  cursor: pointer;
+}

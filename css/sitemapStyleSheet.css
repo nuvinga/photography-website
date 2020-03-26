@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC|Bungee+Inline|Fredericka+the+Great|Lobster+Two|Luckiest+Guy|Permanent+Marker|Press+Start+2P&display=swap');
+
+html {scroll-behavior: smooth;}
+
+.body{
+    background-image: url("images/background.jpg");
+    background-color: #000000;
+    background-size: 100%;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: sans-serif;
+}
+.footer {
+    Left: 0;
+    Width: 100%;
+    Background-color: #010101;
+	bottom:0;
+    Height:40px;
+    Text-align: center;
+    Border-radius: 10px;
+}
+
+.main{
+    padding-top: 1.5em;
+}
+
+.text{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 16px;
+    color: white;
+    user-select: none;
+}
+
+.Pop_Quiz{
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    font-size: 22px;
+}
+
+.Members{
+    font-family: Bebas;
+    font-size: 23px;
+}
+
+.Names{
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    font-size: 26px;
+}
+
+.line{
+    stroke: #b26332;
+    stroke-width: 7;
+}
+
+.circle{
+    fill: #b5b5b5;
+    stroke-width:4;
+}
+
+.circle:hover{
+    fill: #b26332;
+}
+
+.box{
+    fill: #cccbcc;
+    stroke-width:6;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.box:hover{
+    fill: #b26332;
+}
+
+.object{
+    transition: 0.3s;
+}
+
+.object:hover{
+    fill: #ffae85;
+    stroke: #b26332;
+    cursor: pointer;
+}
+

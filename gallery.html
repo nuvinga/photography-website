@@ -1,0 +1,96 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<title>Image Viewer</title>
+		<!--Importing Style Sheets-->
+		<link rel="stylesheet" type="text/css" href="css/galleryStyleSheet.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script>
+			function backgroundColor(color){
+				document.getElementsByTagName("body")["body"].style.backgroundColor=color.value;
+			}
+
+			function textColor(color){
+				document.getElementsByTagName("body")["body"].style.color=color.value;
+			}
+
+			function show(img,txt){
+				var image= document.getElementById("image-preview");
+				var text= document.getElementById("image-description");
+				image.src=img.src;
+				text.innerHTML=txt;
+			}
+		</script>
+	</head>
+
+	<body class="background" name="body" style="background-image: url('images/galleryBackground.png');">
+	<a name="top"></a>
+	<div class="headerH1">
+		<img id="logoH1" src="images/logopng.png" alt="logo" >
+		<div id="navigationbar">
+			<ul>
+				<li><a href="team.html">Team</a></li>
+				<li> <a href="gallery.html">Gallery</a></li>
+				<li> <a href="siteMap.html">Sitemap</a></li>
+				<li> <a href="quiz.html">Quiz</a></li>
+				<li> <a href="products.html">Product</a></li>
+				<li> <a  href="home.html">Home</a></li>
+			</ul>
+		</div>
+	</div>
+
+		<h1>Image Viewer</h1>
+		<h2>Explore some movie posters that marked milestones in cinema..</h2>
+		<!---------------------------FORM------------------------------>
+		<form name="menuForm">
+			<div class="menuCard">
+				Background Color
+				<select name="BackgroundColor" id="BackgroundColor" onchange="backgroundColor(this)">
+					<option value="#b26332">Default- Orange</option>
+					<option value="#217bb2">Blue</option>
+					<option value="#E54AA1">Pink</option>
+					<option value="#60b23d">Green</option>
+					<option value="#656764">Grey</option>
+				</select>
+			</div>
+			<div class="menuCard">
+				Text Color
+				<select name="TextColor" id="TextColor" onchange="textColor(this)">
+					<option value="#000000">Black</option>
+					<option value="#FFFFFF">White</option>
+					<option value="#000080">Navy</option>
+					<option value="#890B74">Purple</option>
+				</select>
+			</div>
+        </form>
+		<div class="container">
+			<div class="leftDiv">
+				<!-------------------------POSTERS---------------------------->
+				<div class=row>
+					<div class=column>
+						<img id="firstFilm" src="images\firstFilmPoster.jpg" class="images1" onclick="show(this,'Henri Brispot, Cinématographe Lumière (1896). This poster was created for the Lumière Brothers on the occasion of the world\'s first-ever public film screening. It is thought to be the world\'s first movie poster. Courtesy of Sotheby\'s London.')" >
+					</div>
+					<div class=column>
+						<img id="starWars" src="images\starWarsPoster.jpg" class="images1" onclick="show(this,'A New Hope or Star Wars is a 1977 science fiction film by George Lucas. This paoster was created for the premiers, the first ever screening around the world. The film is know to be the turning point for cinema\'s Special and After effects.')">
+					</div>
+					<div class=column>
+						<img id="superMan" src="images\superManPoster.jpg" class="images1" onclick="show(this,'Superman (also known as Superman: The Movie) is a 1978 superhero film directed by Richard Donner, based on the DC Comics character of the same name. The film was the first ever movie to really premier a Super Hero character, awakening childhood super hero\'s')">
+					</div>
+					<div class=column>
+						<img id="toyStory" src="images\toyStoryPoster.jpg" class="images1" onclick="show(this,'Toy Story is a 1995 American computer-animated buddy comedy film produced by Pixar Animation Studios and released by Walt Disney Pictures. This film is know to be the world\'s first Fully-Computer Animated film, completely changing the film industry')">
+					</div>
+					<div class=column>
+						<img id="avatar" src="images\avatarPoster.jpg" class="images1" onclick="show(this,'Avatar is a 2009 American epic science fiction film directed, written, produced, and co-edited by James Cameron and stars Sam Worthington, Zoe Saldana, Stephen Lang, Michelle Rodriguez, and Sigourney Weaver. The movie marked a huge turn in Special Effects and 3D animations.')">
+					</div>
+				</div>
+			</div>
+			<div class="centerDiv">
+				<h3 id="image-description">Henri Brispot, Cinématographe Lumière (1896). This poster was created for the Lumière Brothers on the occasion of the world\'s first-ever public film screening. It is thought to be the world\'s first movie poster. Courtesy of Sotheby\'s London.</h3>
+				<img id="image-preview" class= "image-preview" src="images\firstFilmPoster.jpg" alt="preview" />
+			</div>
+		</div>
+		<div>
+			<p style="color:black">Poster Gallery © Created by <a href="student4cv.html">Nuwin Godakanda Arachchi (2019443)</a> <a href="#top" style="color: #ff9e40">[Back to top]</a> </p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,88 @@
+<doctype!>
+	<html>
+		<head>
+			<title>Feedback</title><!..getting the feedback about the site from the user..>
+			<meta charset="utf-8">
+			
+			<link rel="stylesheet" type="text/css" href="css/style.css">
+			<script>
+			//error controlling 
+function validateForm() {
+  var NAME = document.forms["myForm"]["fname"].value;
+  var EMAIL = document.forms["myForm"]["email"].value;
+  var COMMENT = document.forms["myForm"]["comment"].value;
+  var RATE=document.forms["myForm"]["rate_levels"].value;
+  
+  
+  //if name is not entered
+  if ( NAME== "") {
+    alert("Please enter your name."); 
+    return false;
+  }
+  //if the rate is not selected
+  if ( RATE== "") {
+    alert("Please select a rating."); 
+    return false;
+  }
+  //happens when there is no any comment
+   if ( COMMENT== "") {
+    alert("Dear "+NAME+", Thank you very much for your feedback. You have rated our site as "+RATE+"."); 
+    return true;
+  }
+ 
+   alert("Dear "+NAME+", Thank you very much for your feedback. You have rated our site as "+RATE+" and your comment was "+ COMMENT); 			
+  
+  return true;
+}
+</script>
+
+	
+			
+		</head>
+		<body style="background-color:grey;">
+			
+			
+				<div class="headerH1">
+					<img id="logoH1" src="images/logopng.png" alt="logo" >
+					<div id="navigationbar"> 
+					<ul>	   
+						<li><a href="team.html">Team</a></li>
+                        <li> <a href="gallery.html">Gallery</a></li>
+                        <li> <a href="siteMap.html">Sitemap</a></li>
+                        <li> <a href="quiz.html">Quiz</a></li>
+                        <li> <a href="products.html">Product</a></li>
+                        <li> <a  href="home.html">Home</a></li>
+				   </ul>
+				   </div>
+				</div>
+				<center>
+				<h1> <b>Feedback Form</b></h1><br><br>
+			
+			
+			<form name="myForm"  onsubmit="return validateForm()" method="post">
+			
+  <b>Name:</b> <input type="text" name="fname"><br><br><!..prompting the value for name..>
+  <b>Email:</b> <input type="text" name="email"><br><br><!..prompting the value for email..>
+  
+  <b>Comments:</b>
+					<textarea rows="4" cols="50" name="comment" ></textarea><br><br><!..prompting the value for comment..>
+  <b>Website Ranking:</b><br>
+					<input type="radio" name="rate_levels" value="Bad" id="first_level"><b>Bad</b><br><br>
+					<input type="radio" name="rate_levels" value="Good" id="second_level"><b>Good</b><br><br>
+					<input type="radio" name="rate_levels" value="Better" id="third_level"><b>Better</b><br><br>
+					<input type="radio" name="rate_levels" value="Best" id="fourth_level"><b>Best</b><br><br>
+  <!..prompting a rate ..>
+<b>  <input type="submit" value="Submit"><br><br></b><!..submitting the answers..>
+</center>
+</form>
+		
+			
+		</form>
+	<footer>
+				<p>Posted by: P.G.Charani Hasara</p>
+				<p> <a href="student2Cv.html">
+					Page is created by Student 2</a></p>
+			</footer>
+				
+		</body>
+	</html>

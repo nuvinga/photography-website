@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<Title>
+			Cinematography Products
+		</title>
+		<meta charset="utf-8">
+		<style>
+			body{
+				background-image:url("images/store.jpg");
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="css/productStyleSheet.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body id="content">
+	<div class="headerH1">
+               <img id="logoH1" src="images/logopng.png" alt="logo" >
+               <div id="navigationbar">
+				   <ul>
+					   <li><a href="team.html">Team</a></li>
+					   <li> <a href="gallery.html">Gallery</a></li>
+					   <li> <a href="siteMap.html">Sitemap</a></li>
+					   <li> <a href="quiz.html">Quiz</a></li>
+					   <li> <a href="products.html">Product</a></li>
+					   <li> <a  href="home.html">Home</a></li>
+				   </ul>
+				</div>
+         </div>
+			<div id="nav-resize">
+                <button type="button" id="decreaseFont">Decrease font size (-)</button><!-- Button to decrease font size-->
+                <button type="button" id="increaseFont">Increases font size(+)</button><!-- Button to increases font size-->
+            </div>
+	
+			
+		<div id="scontainer"><!--The container which contains the container containing all the content -->
+			<header id="sheader"><!-- makes the bg orange border bottom black and aligns it to the center-->
+			<h1 style="font-size:30px;">Feel free to explore the finest equipment in the entire world </h1> 
+			</header>
+		
+
+			<!-- Red Camera -->
+			  <div id="sleft"><!--contains the image -->
+				<img src="images/cam1.jpg" id="product" alt="Red Camera">
+			  </div>
+			  
+			  <div id="smiddle"><!-- Contains the text part/product description-->
+				<h1 id="add1" >RED DIGITAL CINEMA DSMC2 BRAIN with DRAGON-X 6K S35 Sensor</h1>
+				<h3 id="price">$14,950.00</h3 id="price">
+				<p>Bundling high-performance raw video recording in a compact camera body, the RED DIGITAL CINEMA DSMC2 BRAIN with DRAGON-X 6K S35 Sensor is part of RED's unified DSMC2 lineup.
+				Nearly limitless lens options are available for the DSMC2 system. While this camera requires a separately available lens mount, 
+				DSMC lens mounts themselves are offered in different varieties for compatibility with a wide array of lens systems.</p>
+			  </div>
+			  
+			  <div id="sright"><!-- Contains the add to card/qty and remove from list buttons-->
+				<input type="number"  id="amt1" min="0" max="15" step="1" value="0" size="6" name="cantitate">QTY
+				<Button id="sbuttons" onclick="SaveItem((getElementById('add1').innerHTML), getElementById('amt1').value);"> Add to Cart </button>
+					<Button id="sbuttons" onclick="RemoveItem(getElementById('add1').innerHTML)">Remove from list</button>
+			  </div>
+		  
+			 
+		   <!-- BlackMagic Camera -->
+		  <div id="sleft"><!--contains the image -->
+			<img src="images/cam2.jpg"  id="product" alt="blackMagic cam">
+		  </div>
+		  
+		  <div id="smiddle"><!-- Contains the text part/product description-->
+			  <h1 id="add2">Blackmagic Design Studio Camera 4K 2</h1>
+			  <h3 id="price">$1,695.00</h3 id="price">
+			  <p>The Blackmagic Design Studio Camera 4K 2 is an updated compact and lightweight broadcast camera designed for live production. This is version 2, which removes the internal battery,
+			  making for a studio camera that is both lighter and simpler to ship to locations without running afoul of airline shipping restrictions. Constructed from a magnesium alloy body, the camera is light even for travel, yet durable enough for use in the field.
+			  </p>
+
+		  </div>
+		  
+		  <div id="sright"><!-- Contains the add to card/qty and remove from list buttons-->
+			<input type="number"id ="amt2"  min="0" max="15" step="1" value="0" size="6" name="cantitate">QTY
+			<Button id="sbuttons" onclick="SaveItem((getElementById('add2').innerHTML), getElementById('amt2').value);"> Add to Cart </button>
+				<Button id="sbuttons" onclick="RemoveItem(getElementById('add2').innerHTML)">Remove from list</button>
+			  </div>
+		  
+		  
+				
+		  <!-- Cannon Camera -->     
+		
+		  <div id="sleft"><!--contains the image -->
+			<img src="images/cam3.jpg"  id="product" alt="cannon cam">
+		  </div>
+		  
+		  <div id="smiddle"><!-- Contains the text part/product description-->
+			  <h1 id="add3" >Canon XF100 HD Professional Camcorder</h1>
+			   <h3 id="price">$1,499.00</h3 id="price">
+			  <p>Canon's XF100 HD Professional Camcorder is an amazingly compact, fully featured pro video camera that imports nearly all the features and functionality of the 3-chip XF300 into a smaller, single sensor form factor. Taking advantage of the latest HD technology--along with Canon's robust MPEG-2 4:2:2 codec--the XF100 records full HD video to affordable Compact Flash cards, making it as versatile as it is powerful.
+			  </p>
+				
+		  </div>
+		   <div id="sright"><!-- Contains the add to card/qty and remove from list buttons-->
+			<input type="number" id="amt3"  min="0" max="15" step="1" value="0" size="6" name="cantitate">QTY
+			<Button id="sbuttons" onclick="SaveItem((getElementById('add3').innerHTML), getElementById('amt3').value);"> Add to Cart </button>
+				<Button id="sbuttons" onclick="RemoveItem(getElementById('add3').innerHTML)">Remove from list</button>
+			  </div>
+		  
+		  
+		
+	 <!-- Sony Camera -->  
+		
+		<div id="sleft"><!--contains the image -->
+			<img src="images/cam4.jpg" id="product" alt="Sony Cam"/>
+		</div>
+		
+		<div id="smiddle"><!-- Contains the text part/product description-->
+			<h1 id = "add4">Sony PXW-FS5M2 4K XDCAM Super 35mm Compact Camcorder</h1>
+			<h3 id="price">$4,748.00</h3 id="price">
+			<p>Sony's PXW-FS5M2 4K XDCAM Super 35mm Compact Camcorder features a familiar body style with improved capabilities. 
+			Hybrid Log Gamma enables both an HDR (high dynamic range) and SDR (standard dynamic range) in-camera workflow for flexibility in post and delivery.
+			Newly tuned picture tone settings provide improved image control.</p>
+			
+		</div>
+	
+		<div id="sright"><!-- Contains the add to card/qty and remove from list buttons-->
+			<input type="number" id = "amt4" min="0" max="15" step="1" value="0" size="6" name="cantitate">QTY
+			<Button id="sbuttons" onclick="SaveItem((getElementById('add4').innerHTML), getElementById('amt4').value);"> Add to Cart </button>
+				<Button id="sbuttons" onclick="RemoveItem(getElementById('add4').innerHTML)">Remove from list</button>
+		 </div>
+
+		 <!-- User -->
+		 <div id="sleft"><!--contains the image -->
+			<img src="images/user3.png" id="product" alt="user">
+		  </div>
+		  
+		  <div id="smiddle"><!-- Contains the user description/ form-->
+			<center>
+			<h1 style="text-align:center;font-size:20px;">User Information</h1>
+			<form id ="store" action="" method="post">
+			Name<input type="text" id="name"  placeholder="Name"/>
+			Contact<input type="text" id="contactNo"  placeholder="contact"/><br/>
+			Address<input type="textarea" id ="address" name="Address" placeholder="address"/><br/>
+			</form>
+			</center>
+		  </div>
+		  
+		  <div id="sright"><!-- Contains the add to card/qty and remove from list buttons-->
+			<input id="ssubmit" type="submit" value="submit"></br>
+			<input id="sreset" type="reset" value="clear">
+		  </div>
+
+		 <div id="items_table"><!--the table which shows the items which you have added to the cart -->
+			<center><h2 style="color:white"/>Shopping List</h2>
+			<table id="list"></table>
+			<Button class="ssubmit" onclick="Bill()">Purchase</button>
+			</center>
+		</div>
+		  
+		
+		<div id="sfooter"><!--The footer which will be displayed in the latter part of the page with the hyperlinks -->
+			<center><p>Shadim Sadiq(Student 1)</p>
+			<a href="cinematographyTechniques.html">Personal Webpage</a><br/>
+			<a href="student1cv.html">Student 1 CV</a>
+			</center>
+		</div>
+
+	</div>
+
+	<script>
+
+		window.load=doShowAll();
+		localStorage.clear();
+
+		function SaveItem(product,amount) {
+localStorage.setItem(product, amount);
+doShowAll();
+
+}
+
+function RemoveItem(name)
+{
+localStorage.removeItem(name);
+doShowAll();
+}
+
+		function doShowAll() {
+        var key = "";
+        var list = "<tr><th>Item</th><th>Value</th></tr>\n";
+        var i = 0;
+        //For a more advanced feature, you can set a cap on max items in the cart.
+        for (i = 0; i <= localStorage.length-1; i++) {
+            key = localStorage.key(i);
+            list += "<tr><td>" + key + "</td>\n<td>"
+                    + localStorage.getItem(key) + "</td></tr>\n";
+        }
+        //If no item exists in the cart.
+        if (list == "<tr><th>Item</th><th>Value</th></tr>\n") {
+            list += "<tr><td><i>empty</i></td>\n<td><i>empty</i></td></tr>\n";
+        }
+        //Bind the data to HTML table.
+            document.getElementById('list').innerHTML = list;
+
+}
+
+function increaseFontSize() {
+    docElement = document.getElementById('content');
+    style = window.getComputedStyle(docElement, null).getPropertyValue('font-size');
+    currentFontSize = parseFloat(style);
+	docElement.style.fontSize = (currentFontSize + 2) + 'px';
+}
+
+function decreaseFontSize() {
+	docElement = document.getElementById('content');
+    style = window.getComputedStyle(docElement, null).getPropertyValue('font-size');
+    currentFontSize = parseFloat(style);
+	docElement.style.fontSize = (currentFontSize - 2) + 'px';
+}
+
+// (Global) Font Resize Event Listeners
+document.getElementById("decreaseFont").addEventListener('click',function(){decreaseFontSize();});
+document.getElementById("increaseFont").addEventListener('click',function(){increaseFontSize();});
+
+function Bill(){
+	var name=document.getElementById("name").value;
+	var Contact=document.getElementById("contactNo").value;
+	var Address=document.getElementById("address").value;
+	var product1 = document.getElementById("amt1").value;
+    var product2 = document.getElementById("amt2").value;
+    var product3 = document.getElementById("amt3").value;
+	var product4 = document.getElementById("amt4").value;
+
+	var product1Price = 14950*product1;
+    var product2Price = 1695*product2;
+    var product3Price = 1499*product3;
+	var product4Price = 4748*product4;
+
+	var grandTotal = 0;
+        grandTotal = product1Price+product2Price+product3Price+product4Price;
+        
+	
+	if (name== "" || Contact== "" || Address== "" ){
+		alert("Form must be completed");
+	return false;
+	}else{
+		alert ( 
+			"Dear " + name+ ", you have ordered" +"\n"+"\n" + "\n" +
+			 product1+"RED DIGITAL CINEMA DSMC2 BRAIN with DRAGON-X 6K S35 Sensor "+"\n" + product2+ 
+			 " Blackmagic Design Studio Camera 4K 2" +"\n" + product3 + "Canon XF100 HD Professional Camcorder" + 
+			 "\n" + product4 + "Sony PXW-FS5M2 4K XDCAM Super 35mm Compact Camcorder"+ "\n"  +  "\nYour total bill is :$. " + grandTotal 
+			 + "\n\n THANK YOU FOR SHOPPING WITH US!");
+	}
+	
+}
+
+
+</script>
+  
+</body>
+</html>

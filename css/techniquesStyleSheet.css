@@ -1,0 +1,149 @@
+.headerH1{
+	 background:black;
+	 }
+ #logoH1{
+       width:145px;
+       height:80px;
+      }
+ #navigationbar{
+		 float:right;
+		 text-align: center;
+		 padding: 25px;
+		 text-decoration: none;
+		 font-size: 20px;
+		 border-right: 2px solid black;
+}
+
+ li{
+  float:right;
+  }
+
+ li a:hover{
+	 background-color:orange;
+	 }
+ li a{
+	 display:block;
+	 color:white;
+     padding:14px 16px;
+	 text-decoration:none;
+	 text-align:center;
+	 }
+footer{
+
+    width: 100%;
+    background-color: orange;
+    text-align: center;
+}
+		
+#headerS2{
+	background-image: url(../image2.jpg);
+	margin-top: -196px;
+	height: 80vh;
+	background-size: cover;
+	background-position: top;
+	position: fixed;
+}
+
+.headerH1{
+	 background:black;
+	 }
+ #logoH1{
+       width:200px;
+       height:100px;
+      }
+ #navigationbar{
+		 float:right;
+		 text-align: center;
+		 padding: 25px;
+		 text-decoration: none;
+		 font-size: 20px;
+		 border-right: 2px solid black;
+						 
+		 }
+#sh1 	{
+			font-size:60px;
+			font-family: 'Oswald', sans-serif;
+			font-weight: 200;
+			position: absolute;
+			text-align: center;
+			display: block;
+			color: white;
+			top: 10%;
+			width: 100%;
+			margin-top: 100px;
+		    text-transform: uppercase;
+		    letter-spacing: 1px;
+		    -webkit-transform-style: preserve-3d;
+		    -moz-transform-style: preserve-3d;
+	         transform-style: preserve-3d;
+		    -webkit-transform: translate3d(0,0,0);
+		    -moz-transform: translate3d(0,0,0);
+			transform: translate3d(0,0,0);
+			 opacity: 0;
+			-webkit-animation: anim 3.2s ease-out forwards 1s;
+			animation: anim 3.2s ease-out forwards 1s;
+			}
+		@-webkit-keyframes anim {
+			 50% {
+				text-shadow: 0 0 1px #fff;
+				opacity:1;
+				-webkit-transform: rotateY(0deg);
+			  }
+			  75% {
+				text-shadow: 0 0 1px #fff;
+				opacity:1;
+				-webkit-transform: rotateY(0deg) translateZ(60px);
+			  }
+			  100% {
+				text-shadow: 0 0 1px #fff;
+				opacity:1;
+				letter-spacing: 8px;
+				-webkit-transform: rotateY(0deg) translateZ(100px);
+			  }
+		}  
+	
+
+	#mainp{
+		font-family: 'Oswald', sans-serif;
+		margin-top:200px;
+		color:white;	
+		font-weight:bold;
+		text-align:center;
+	}
+
+.row {
+	display: flex;
+}
+.polaroid {
+	width: 30%;
+    background-color: white;
+		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		  margin-bottom: 25px;
+		  margin-left:15px;
+		  margin-right: 10px;
+		  flex:5%;  
+		  padding:15px;
+}
+	
+
+		
+#student1container {
+		font-size: 40px;
+		font-family: 'Oswald', sans-serif;
+		text-align: center;
+		color:black;
+		 padding: 10px 20px;
+	}
+#sinfo{
+	font-size:20px;
+	text-align:justify;
+}	
+#student1anchor{
+	color:white;
+}
+
+	
+
+	
+
+	

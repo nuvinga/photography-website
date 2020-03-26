@@ -1,0 +1,83 @@
+body{
+	background-size: 100%;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	font-family: sans-serif;
+}
+
+.center {
+  display: block;
+  margin-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  height: auto;
+}
+
+.heading{
+	color:white;
+	font-family: 'Oswald', sans-serif;	
+	font-size: 60px;
+	padding-top:2%;
+	text-align: center;
+}
+
+.paragraph{
+	text-align: left;
+	color:#ed5927;
+	padding-left: 4%;
+	font-size: 125%;
+	font-family: 'Oswald', sans-serif;
+	line-height: 1.8;
+}
+s
+.box1{
+	border-left-style: solid;
+	border-left-width: 8px;
+	border-left-color: white;
+	
+	border-top-style: solid;
+	border-top-width: 8px;
+	border-top-color: ;
+	
+	border-radius: 15px;
+	
+	box-shadow: 5px 5px 20px 5px rgba(125, 249, 255);
+}
+
+ .box1 > div{
+	border-top-style: solid;
+	border-top-width: 5px;
+	border-top-color: white;
+}
+
+.top{
+	border-top-style: solid;
+	border-top-width: 8px;
+	border-top-color: white;
+	
+	border-radius: 15px;
+
+	box-shadow: 5px 5px 20px 5px rgba(125, 249, 255);
+
+}
+
+.nested{
+	display: grid;
+	font-size: 20px;
+	font-family: 'Baloo Chettan 2', cursive;
+	color: white;
+}
+.nested > div{
+	border-top-style: solid;
+	border-top-width: 5px;
+	border-top-color: white;
+}
+
+.bold{
+	font-size: 25px;
+	color:white;
+	font-family: 'Baloo Chettan 2', cursive;
+}
+

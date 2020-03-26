@@ -1,0 +1,38 @@
+
+
+ .section2{
+	  width: 1000px;
+	  margin:20px;
+	 padding: 20px 50px;
+	 align:center;	
+	 display:inline-block;
+	 background-color:black;
+	 color:white;
+	 margin-left:150px;
+         border-style: solid;
+         border-color: white;
+	
+        
+	   }
+   #h1H1{
+        color:#F31E48;
+        text-align:center;
+        font-size:30px;
+       }
+   .que{
+	   color:white;
+      }
+  .remainingTime{
+		 color:#F31E48;
+		 }
+
+footer{
+	
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: orange;
+    text-align: center;
+}
+		

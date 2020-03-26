@@ -1,0 +1,113 @@
+  body{
+	  margin:0;
+	  padding:0;
+	  font-family:sans-serif;
+	  background:#262626;
+						  }
+.team-members{
+		 overflow:hidden;
+		 text-align:center;
+		 background-color:#871705;
+		 padding:100px;
+                  height: 80%; 
+
+	   }
+.team-members h1{
+		 text-transform:uppercase;
+		 margin-bottom:20px;
+		 color:white;
+		 font-size:40px;
+		}
+
+			
+				
+  .container{
+	    width:100%;
+	    margin:50;
+	    padding:0;	
+	    display:grid;
+	}
+
+
+ .contentH2{
+	 width:1280px;
+	 margin:100px auto 0;
+	 display:flex;
+	 flex-direction:row;
+	 flex-wrap:wrap;
+        
+						 
+	 }
+ .contentH2 .box{
+		 position:relative;
+		 width:200px;
+		 height:200px;
+		 background:#5B5959;
+		 margin:60px;
+		 box-sizing:border-box;
+		 display:inline-block;
+                 border-radius:50%;
+	}
+ .contentH2  .box  .imageBox{
+			 position:relative;
+
+		       }
+				
+ .contentH2 .box  .imageBox img{
+			max-width:100%;
+			transition:transform 5s;
+                         border-radius:50%;
+				 
+                             }
+
+.contentH2  .box:hover .imgBox img{
+			       transform:scale(1.2);
+
+				 }
+
+.contentH2  .box  .details {
+			 position:absolute;
+			 top:10px;
+			 left:10px;
+			 bottom:10px;
+			 right:10px;
+			 background:rgba(0,0,0,.8);
+			 transform:scaleY(0);
+		         transition:transform 5s;
+                         border-radius:50%;
+				 }
+				 
+ .contentH2  .box:hover  .details {
+			 transform:scaleY(1);
+				  }
+ .contentH2  .box   .details .content2 {
+				 position:absolute;
+				 transform:translateY(-50%);
+				 text-align:center;
+				 padding:15px;
+						 
+				 }
+.contentH2 .box  .content2 .details  h2 {
+				         margin:0;
+				         padding:0;
+				         font-size:18px;
+				         color:red;
+                                         margin:60px 0 0;
+
+				 }
+.contentH2 .box  .content2 .details  p {
+				     margin:10px 0 0;
+				     padding:0;
+				     top:50%;
+				     color:#fff;
+				 }
+footer{
+	
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: orange;
+    text-align: center;
+}
+		

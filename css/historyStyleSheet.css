@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC|Bungee+Inline|Fredericka+the+Great|Lobster+Two|Luckiest+Guy|Permanent+Marker|Press+Start+2P&display=swap');
+
+html {scroll-behavior: smooth;}
+
+body{
+    background-color: #b26332;
+    background-size: fit;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+header{
+    padding: 1em;
+    height: 70vh;
+    margin:0.5em;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.footer {
+    padding-top: 2px;
+    Left: 0;
+    Width: 100%;
+    Background-color: #000000;
+    color: #ff9e40;
+    Text-align: center;
+    Height:40px;
+    Top:50px;
+    Border-radius: 10px;
+}
+form{
+    background-color: #142b39;
+    color:white;
+    text-align:center;
+    margin: auto;
+    width: 100%;
+    padding:50px;
+    clear: both;
+}
+.menuCard{
+    width: 50%;
+    float: left;
+    position: relative;
+}
+option{
+    padding: 13px 32px;
+    margin: 6px 17px;
+    color: #ffffff;
+    background-color: #14335d;
+    display: inline-block;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.title h1{
+    color: #ffffff;
+    text-shadow: 2px 2px 8px #2db0ff;
+    font-family: 'Lobster Two', cursive;
+    font-size: 650%;
+    text-align: center;
+    text-transform: capitalize;
+}
+h2{
+    font-family: 'Bungee Inline', cursive;
+    font-size: 25px;
+}
+.selection{
+    text-decoration: none;
+    padding: 13px 32px;
+    margin: 6px 17px;
+    color: #ffffff;
+    background-color: #14335d;
+    display: inline-block;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.selection:hover{
+    box-shadow: rgba(0,0,0,0.19);
+    background-color: #20475d;
+    transition:  all 0.4s ease 0s;
+    letter-spacing: 1px;
+    border-radius: 50px;
+}
+.select{
+    display: inline-block;
+    transition: vertical-align;
+}
+.outterDeets{
+    background-color: white;
+    width: 55%;
+    margin: auto;
+}
+.text{
+    font-family: sans-serif;
+    background-color: white;
+    width: 82%;
+    margin: auto;
+    color: #000;
+    font-size: 16px;
+    line-height: 2em;
+    padding: 0 0 1em 0;
+    text-align: justify;
+}
+.img{
+    background-color: rgba(140, 140, 140, 0.5);
+    min-width:45%;
+    text-align: right;
+}
+.img img{
+    margin-right: 40px;
+}
+.img p{
+    margin: 0px;
+    padding: 0px;
+    font-size: 10px;
+    font-style: italic;
+}
+.feedback{
+    font-family: 'PT Sans Narrow', sans-serif;
+    background-color: #20475d;
+    padding: 0.5em 3em 2em 5em ;
+    color: white;
+}
